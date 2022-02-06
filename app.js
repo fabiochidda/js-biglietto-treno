@@ -41,7 +41,11 @@ if (passengerAge < 18) {
 
     let ticketPriceDiscount = (ticketPrice * 20) / 100;
 
-    let ticketDiscounted = ticketPrice - ticketPriceDiscount; 
+    let ticketDiscounted = ticketPrice - ticketPriceDiscount;
+    
+    document.getElementById("ticketDiscount").innerHTML = ticketPriceDiscount
+
+    document.getElementById("ticketDiscounted").innerHTML = ticketDiscounted
 
     console.log(ticketDiscounted);
 
@@ -50,12 +54,14 @@ if (passengerAge < 18) {
     let ticketPriceDiscount = (ticketPrice * 40) / 100;
 
     let ticketDiscounted = ticketPrice - ticketPriceDiscount;
+    
+    document.getElementById("ticketDiscount").innerHTML = ticketPriceDiscount
+
+    document.getElementById("ticketDiscounted").innerHTML = ticketDiscounted
 
     console.log(ticketDiscounted);
     
 } else {
-
-    document.getElementById("ticketPrice").innerHTML = ticketPrice
 
     document.getElementById("ticketDiscount").innerHTML = "0.00"
 
@@ -63,4 +69,4 @@ if (passengerAge < 18) {
 
 }
 
-
+document.getElementById("ticketPrice").innerHTML = ticketPrice
