@@ -3,15 +3,31 @@ alert("Benvenuto")
 
 // Prompt per inserire il numero di chilometri
 
-let userKm = prompt("Inserisci qui i chilometri che vuoi percorrere");
+let userKm = parseInt( prompt("Inserisci qui i chilometri che vuoi percorrere"));
 
 console.log(userKm);
 
+// Controllo dati KM 
+
+if (isNaN(userKm)) {
+
+    alert("Per favore inserisci un numero");
+
+}
+
 // Prompt per inserire l'età del passeggero
 
-let passengerAge = prompt("Inserisci qui l'età del passeggero");
+let passengerAge = parseInt( prompt("Inserisci qui l'età del passeggero"));
 
 console.log(passengerAge);
+
+// Controllo dati età 
+
+if (isNaN(passengerAge)) {
+
+    alert("Per favore inserisci un numero");
+
+}
 
 // Calcolo prezzo biglietto
 
@@ -37,6 +53,14 @@ if (passengerAge < 18) {
 
     console.log(ticketDiscounted);
     
+} else {
+
+    document.getElementById("ticketPrice").innerHTML = ticketPrice
+
+    document.getElementById("ticketDiscount").innerHTML = "0.00"
+
+    document.getElementById("ticketDiscounted").innerHTML = ticketPrice
+
 }
 
 
