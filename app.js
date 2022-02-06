@@ -12,3 +12,31 @@ console.log(userKm);
 let passengerAge = prompt("Inserisci qui l'età del passeggero");
 
 console.log(passengerAge);
+
+// Calcolo prezzo biglietto
+
+let ticketPrice = userKm * 0.21;
+
+console.log(ticketPrice);
+
+// Controllo età per gli sconti
+
+if (passengerAge < 18) {
+
+    let ticketPriceDiscount = (ticketPrice * 20) / 100;
+
+    let ticketDiscounted = ticketPrice - ticketPriceDiscount; 
+
+    console.log(ticketDiscounted);
+
+} else if (passengerAge >= 60) {
+
+    let ticketPriceDiscount = (ticketPrice * 40) / 100;
+
+    let ticketDiscounted = ticketPrice - ticketPriceDiscount;
+
+    console.log(ticketDiscounted);
+    
+}
+
+
