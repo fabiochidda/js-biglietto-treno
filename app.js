@@ -1,5 +1,5 @@
 // Alert di benvenuto
-alert("Benvenuto")
+alert("Benvenuto");
 
 // Prompt per inserire il numero di chilometri
 
@@ -39,13 +39,13 @@ console.log(ticketPrice);
 
 if (passengerAge < 18) {
 
-    let ticketPriceDiscount = (ticketPrice * 20) / 100;
+    let ticketPriceDiscount = (Math.round((ticketPrice * 20) / 100).toFixed(2));
 
     let ticketDiscounted = ticketPrice - ticketPriceDiscount;
     
-    document.getElementById("ticketDiscount").innerHTML = ticketPriceDiscount
+    document.getElementById("ticketDiscount").innerHTML = ticketPriceDiscount;
 
-    document.getElementById("ticketDiscounted").innerHTML = ticketDiscounted
+    document.getElementById("ticketDiscounted").innerHTML = ticketDiscounted;
 
     console.log(ticketDiscounted);
 
@@ -55,18 +55,18 @@ if (passengerAge < 18) {
 
     let ticketDiscounted = ticketPrice - ticketPriceDiscount;
     
-    document.getElementById("ticketDiscount").innerHTML = ticketPriceDiscount
+    document.getElementById("ticketDiscount").innerHTML = ticketPriceDiscount;
 
-    document.getElementById("ticketDiscounted").innerHTML = ticketDiscounted
+    document.getElementById("ticketDiscounted").innerHTML = ticketDiscounted;
 
     console.log(ticketDiscounted);
     
 } else {
 
-    document.getElementById("ticketDiscount").innerHTML = "0.00"
+    document.getElementById("ticketDiscount").innerHTML = "0.00";
 
-    document.getElementById("ticketDiscounted").innerHTML = ticketPrice
+    document.getElementById("ticketDiscounted").innerHTML = ticketPrice;
 
 }
 
-document.getElementById("ticketPrice").innerHTML = ticketPrice
+document.getElementById("ticketPrice").innerHTML = ticketPrice;
